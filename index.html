@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitacora</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="logo">
+                <img src="assets/img/logoCCIOD.png" alt="logo cciod">
+            </div>
+            <div class="calendar">
+                <div class="month">
+                    <svg class="prev" xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-arrow-badge-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 6h-6a1 1 0 0 0 -.78 .375l-4 5a1 1 0 0 0 0 1.25l4 5a1 1 0 0 0 .78 .375h6l.112 -.006a1 1 0 0 0 .669 -1.619l-3.501 -4.375l3.5 -4.375a1 1 0 0 0 -.78 -1.625z" /></svg>
+                    <div class="date"></div>
+                    <svg class="next" xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-arrow-badge-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z" /></svg>
+                </div>
+                <div class="weekdays">
+                    <div>Dom</div>
+                    <div>Lun</div>
+                    <div>Mar</div>
+                    <div>Mie</div>
+                    <div>Jue</div>
+                    <div>Vie</div>
+                    <div>Sab</div>
+                </div>
+                <div class="days"></div>
+                <div class="goto-today">
+                    <div class="goto">
+                        <input type="text" placeholder="mm/yyyy" class="date-input" />
+                        <button class="goto-btn">Ir</button>
+                    </div>
+                    <button class="today-btn">Hoy</button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="today-date">
+                <div class="event-day"></div>
+                <div class="event-date"></div>
+            </div>
+            <div class="events"></div>
+            <div class="add-event-wrapper">
+                <div class="add-event-header">
+                    <div class="title">Añadir Evento</div>
+                    <svg class="close" xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                </div>
+                <form action="" id="formulario">
+                    <div class="add-event-body">
+                        <div class="add-event-input">
+                            <input type="text" placeholder="Nombre del evento" class="event-name" />
+                        </div>
+                        <div class="add-event-input">
+                            <input type="text" placeholder="Hora" class="event-time-from" />
+                        </div>
+                        <div class="add-event-input input-file">
+                            <div>
+                                <input type="file" class='fancy-file' id="archivo" name="avatar" data-button="Examinar" data-empty="Sin archivos" multiple />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-event-footer">
+                        <button class="add-event-btn">Agregar Evento</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <button class="add-event">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>
+        </button>
+    </div>
+
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
